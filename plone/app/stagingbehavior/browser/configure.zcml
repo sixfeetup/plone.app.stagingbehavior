@@ -10,4 +10,12 @@
         allowed_attributes="checkin_allowed checkout_allowed cancel_allowed"
         />
 
+    <browser:page
+       for="plone.app.stagingbehavior.interfaces.IStagingSupport"
+       class=".diff.DiffView"
+       name="iterate_diff"
+       template="diff.pt"
+       permission="zope2.View"
+       />
+
 </configure>
